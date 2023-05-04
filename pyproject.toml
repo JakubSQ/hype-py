@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hype-py"
+version = "0.1.0"
+authors = ["JakubSQ <skuta.jakub@gmail.com>"]
+description = "The hypermodern Python project"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/JakubSQ/hype-py"
+repository = "https://github.com/JakubSQ/hype-py"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+requests = "^2.29.0"
+
+[tool.poetry.scripts]
+hype-py = "hype_py.console:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
